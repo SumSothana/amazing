@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    </style>
+    <script>
+        var pic = ["pic_1.jpg", "pic_2.jpg", "pic_3.jpg",
+            "pic_4.jpg", "pic_5.jpg"
+        ];
+        var index = 0;
+
+        function myBack() {
+
+        }
+
+        function myGo() {
+            if (index >= pic.length) {
+                index = -1;
+            }
+            document.getElementById("x").src = "../resource/" + pic[++index];
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <img src="../resource/pic_1.jpg" id="x" />
+        <br/>
+        <input type="button" value=" << " onClick="myBack()" />
+        <input type="button" value=" >> " onClick="myGo()" />
+    </center>
+</body>
+
+</html>

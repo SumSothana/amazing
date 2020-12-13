@@ -1,0 +1,510 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+span {
+    color: gold;
+}
+
+
+/*  headder image */
+
+.picHead {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/car.jpg);
+    background-size: 100% 100px;
+}
+
+.overLay {
+    width: 100%;
+    height: 100px;
+    background: #000;
+    opacity: 0.6;
+    position: absolute;
+}
+
+.picHead h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    /*   oy dit color white   */
+    z-index: 1;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+/*--all of 5 menu----*/
+
+.head {
+    width: 100%;
+}
+
+.head .menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.head .menu a {
+    display: grid;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: black;
+    font-size: 20px;
+    color: gold;
+    border-right: 1px solid rgb(112, 97, 9);
+}
+
+.menus a {
+    padding: 10px;
+}
+
+.menus a:hover {
+    background-color: rgb(129, 129, 125);
+    color: black;
+}
+
+.menu .current a {
+    background-color: gold;
+    color: black;
+}
+
+
+/*  reponsive the Phone */
+
+.menu-phone {
+    display: none;
+    width: 100%;
+    background-color: gold;
+    float: left;
+    position: relative;
+}
+
+.menu-phone-btn {
+    background-image: url(../html/menus.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 80px;
+    height: 60px;
+}
+
+.menu-phone-btn:hover {
+    opacity: 0.8s;
+    background-color: black;
+}
+
+.menu-phone-show {
+    display: none;
+}
+
+.pmenu {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.pmenu .menus {
+    padding: 10px;
+}
+
+.pmenu .menus a {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+
+@media (max-width:1000px) {
+    .head {
+        display: none;
+    }
+    .menu-phone {
+        display: block;
+    }
+}
+
+
+/*-------page-Home-------------------------------------------------*/
+
+.case {
+    width: 100%;
+    height: 400px;
+    background: url(../img/backpage.jpg);
+    background-size: 100% 400px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.case h1 {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.case p {
+    font-size: 30px;
+    font-family: monospace;
+    color: white;
+    text-align: center;
+}
+
+.case a {
+    display: inline-block;
+    font-size: 20px;
+    color: black;
+    background: goldenrod;
+    padding: 20px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 46%;
+    margin-top: 3%;
+}
+
+.case a:hover {
+    background-color: black;
+    color: goldenrod;
+    border: 2px solid goldenrod;
+}
+
+
+/*-----------------------------------------------*/
+
+.container {
+    display: inline-block;
+    width: 50%;
+    height: 400px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container-r {
+    display: block;
+    float: right;
+    width: 50%;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+}
+
+.container-r img {
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+}
+
+
+/*******************/
+
+.foot {
+    width: 100%;
+    float: left;
+}
+
+.foot .menuf {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.menuf .menua a {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.menua a:hover {
+    color: white;
+}
+
+
+/*********---page-Temple---*************************************************************-----------*/
+
+.bg {
+    float: left;
+    width: 100%;
+}
+
+.pic-temple {
+    background: url(../img/temple/angkor.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+img {
+    width: 65%;
+    height: 250px;
+    border: gold solid 5px;
+}
+
+.paragrape {
+    background-color: #fff;
+    width: 70%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*-----button location-------*/
+
+.paragrape a {
+    display: inline-block;
+    font-size: 20px;
+    color: black;
+    background: goldenrod;
+    padding: 20px 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.paragrape a:hover {
+    color: goldenrod;
+    background-color: black;
+}
+
+
+/*-button See More-----------*/
+
+.see {
+    display: none;
+    width: 70%;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.see img {
+    width: 40%;
+    height: 200px;
+    margin: 1%;
+}
+
+button {
+    background-color: goldenrod;
+    color: black;
+    font-size: 20px;
+    margin: 2%;
+    padding: 2%;
+    cursor: pointer;
+}
+
+button:hover {
+    background: black;
+    color: gold;
+}
+
+
+/****---page-Music-------***********************************************************************/
+
+.pic-music {
+    background: url(../img/music/Background-Music.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.containerM {
+    display: inline-block;
+    width: 49%;
+    height: 400px;
+    background-color: rgb(243, 243, 241);
+    text-align: center;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 6.2px solid gold;
+}
+
+.container-r-M {
+    display: block;
+    float: right;
+    width: 50%;
+    height: 400px;
+    background-color: gold;
+}
+
+.container-r-M video {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+/****---page-Sport-----------**********************************************************************************************/
+
+
+/*-use class : paragrape, bg  */
+
+.pic-sport {
+    background: url(../img/sport/sport-background.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.pic-sport-l {
+    float: left;
+    width: 25%;
+    height: 400px;
+    margin: 10% 0 20% 2%;
+}
+
+.pic-sport-l img {
+    width: 100%;
+    margin: 20% 2% 30% 0;
+    height: 400px;
+}
+
+.para-sport {
+    float: right;
+    width: 65%;
+    height: 100%;
+    margin: 5% 2% 5% 0;
+    background: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*****---page-news-------*******************************************************************************************************/
+
+
+/*----use class : bg */
+
+.pic-news {
+    float: left;
+    background: url(../img/News/news-back.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.protect-pic {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 500px;
+    margin-right: 20%;
+}
+
+.protect-pic img {
+    width: 100%;
+    height: 500px;
+}
+
+.contain-news {
+    float: right;
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    background-color: wheat;
+    margin: 2% 4% 0 4%;
+    opacity: 0.8;
+}
+
+.pic img {
+    width: 100%;
+    height: 500px;
+}
+
+.button {
+    background-color: gold;
+    color: black;
+    margin: 2%;
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+/*******-contact-page-----****************************************************************************/
+
+#contact-form .frmGroup {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    /*   oy dach pi kne   */
+    margin-bottom: 1px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+
+/*-------------------------*/
+
+#contact-form .frmGroup {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    /*   oy dach pi kne   */
+    margin-bottom: 1px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+.containers {
+    /*   margin: 0 70px;   */
+    margin: auto;
+    max-width: 1000px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.box {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 10px;
+}
+
+
+/*--------footer all page----------------*/
+
+#mainFoot {
+    text-align: center;
+    background: black;
+}
+
+#mainFoot p {
+    color: white;
+    font-size: 17px;
+}
+
+.py-3 {
+    padding: 30px 0;
+}
+
+h3 {
+    color: goldenrod;
+}
+
+
+/*****************************************************************************************************************************************************/
